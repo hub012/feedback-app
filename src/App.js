@@ -1,12 +1,13 @@
 import Header from "./components/Header";
-import FeedbackItem from "./components/FeedbackItem";
+import FeedbackList from "./components/FeedbackList";
+import FeedbackData from "./data/FeedbackData"
 
 function App(){
     return (
         <>
             <Header />
             <div className="container">
-                <FeedbackItem item={{rating: 10, text:'Lo mejor del mundo!'}} />
+                <FeedbackList feedback={FeedbackData} />
             </div>
         
         </>
