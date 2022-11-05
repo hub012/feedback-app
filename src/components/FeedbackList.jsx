@@ -3,6 +3,10 @@ import PropTypes from "prop-types"
 
 function FeedbackList({feedback}) {
 
+    if(!feedback || feedback.lenght === 0){
+        return <p> No hay feedbacks</p>
+    }
+
   return (
     <div>
         {
